@@ -1,0 +1,17 @@
+:root {
+	/* Colours */
+	--text-colour:  #4a4a4a;
+	--stealth-hover: gray;
+	--link-colour: blue;
+
+	/* Margins */
+	/*
+		minimal: 10px;
+		medium: 30px;
+		large: 50px;
+	*/
+
+	/* US complaint */
+	--text-color: var(--text-colour);
+	--link-color: var(--link-colour);
+}

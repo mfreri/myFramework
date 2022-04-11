@@ -1,0 +1,240 @@
+@import "fonts.css";
+@import "settings.css";
+
+
+/* PRIMITIVES */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	color: var(--text-colour);
+	font-family: var(--text-font);
+	margin: 20px;
+	padding: 0;
+}
+
+h1 {
+	font-family: var(--title-font);
+	font-size: 42px;
+}
+
+h1, h2, h3 {
+	margin: 20px 0 5px 0;
+}
+
+hr {
+	color: var(--text-colour);
+	background-color: var(--text-colour);
+	border: none;
+	height: 1px;
+	margin: 10px;
+}
+
+p {
+	margin-top: 5px;
+	text-align: justify;
+}
+
+footer {
+	padding: 0 10px;
+	clear: both;
+}
+
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+
+/* MAIN CONTAINERS */
+
+.header-container {
+	/*background-color: pink;*/
+	padding: 10px;
+	clear: both;
+}
+
+.body-container {
+	/*background-color: palegoldenrod;*/
+	margin-top: 20px;
+	padding: 30px 0 10px 0;
+	clear: both;
+	display: inline-block;
+}
+
+.footer-container {
+	/*background-color: lightgreen;*/
+	padding: 50px 10px 10px 10px;
+	clear: both;
+}
+
+
+/* SUB CONTAINERS */
+
+.title-logo {
+}
+
+.main-title {
+	font-family: var(--title-font);
+	font-size: 42px;
+	margin-bottom: 20px;
+}
+
+.navbar {
+	margin: 5px 0;
+}
+
+.navbar-single {
+	clear: both;
+}
+
+.navbar-left {
+	clear: left;
+}
+
+.navbar-right {
+	clear: right;
+}
+
+.navbar-left nav ul li {
+	padding-right: 10px;
+}
+
+.navbar-right nav ul li {
+	padding-left: 10px;
+}
+
+
+/* POSITION */
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+.fixed-top {
+	position: fixed;
+	top: 0;
+	left: 10px;
+	right: 10px;
+}
+
+
+/* LINKS */
+
+.stealth-link {
+	text-decoration: none;
+	color: var(--text-colour);
+}
+
+.stealth-link:hover {
+	text-decoration: none;
+	color: var(--stealth-hover);
+}
+
+.permanent-link:visited {
+	color: var(--link-colour);
+}
+
+
+/* TEXT */
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.list-unstyled {
+	list-style-type: none;
+}
+
+.list-inline li {  /* For use in the ul element */
+	display: inline-block;
+}
+
+
+/* GRID */
+
+.one-column {
+	clear: both;
+	padding: 10px;
+}
+
+.two-columns {
+	width: 50%;
+	float: left;
+	padding: 10px;
+}
+
+.three-columns {
+	width: 33.33%;
+	float: left;
+	padding: 10px;
+}
+
+.four-columns {
+	width: 25%;
+	float: left;
+	padding: 10px;
+}
+
+
+/* RESPONSIVE */
+
+/*
+	xs:      -> 575
+	sm:  576 -> 767
+	md:  768 -> 991
+	lg:  992 -> 1199
+	xl: 1200 ->
+*/
+
+/* Extra-small */
+
+@media (max-width: 575px) {
+	.xs-hide {
+		display: none;
+	}
+}
+
+/* Small */
+
+@media (min-width: 576px) and (max-width: 767px) {
+	.sm-hide {
+		display: none;
+	}
+}
+
+/* Medium */
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.md-hide {
+		display: none;
+	}
+}
+
+/* Large */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.lg-hide {
+		display: none;
+	}
+}
+
+/* Extra-large */
+
+@media (min-width: 1200px) {
+	.xl-hide {
+		display: none;
+	}
+}
+
