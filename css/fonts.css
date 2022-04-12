@@ -1,19 +1,17 @@
+/* Technical look */
 @font-face {
 	font-family: 'Andale';
 	src: url(../fonts/andalemo.ttf);
 }
 
+/* Elegant */
 @font-face {
 	font-family: 'AvantGarde';
 	src: url(../fonts/avgardn.ttf);
 }
 
+/* Light but easy to read */
 @font-face {
 	font-family: 'BellGothic';
 	src:  url(../fonts/belgothn.ttf);
-}
-
-:root {
-	--title-font: 'AvantGarde';
-	--text-font: 'BellGothic';
 }

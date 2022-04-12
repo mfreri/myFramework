@@ -4,6 +4,11 @@
 	--stealth-hover: gray;
 	--link-colour: blue;
 
+	/* Fonts */
+	/* The font files are setup in fonts.css */
+	--title-font: 'AvantGarde';
+	--text-font: 'BellGothic';
+
 	/* Margins */
 	/*
 		minimal: 10px;
