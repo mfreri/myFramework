@@ -1,5 +1,5 @@
 # myFramework
-### Version 0.2a (alpha)
+### Version 0.3a (alpha)
 ---
 
 ## Introduction

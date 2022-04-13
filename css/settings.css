@@ -1,8 +1,16 @@
+/* Variables */
+
 :root {
 	/* Colours */
 	--text-colour:  #4a4a4a;
+	--bg-colour: white;
 	--stealth-hover: gray;
-	--link-colour: blue;
+	--link-colour: #729FCF;
+
+	/* Colours in dark mode */
+	--text-dark-mode: lightgray;
+	--bg-dark-mode: #303841;
+	--stealth-hover-dark: white;
 
 	/* Fonts */
 	/* The font files are setup in fonts.css */
@@ -18,5 +26,6 @@
 
 	/* US complaint */
 	--text-color: var(--text-colour);
+	--bg-color: var(--bg-colour);
 	--link-color: var(--link-colour);
 }

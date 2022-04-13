@@ -8,6 +8,7 @@
 }
 
 body {
+	background-color: var(--bg-colour);
 	color: var(--text-colour);
 	font-family: var(--text-font);
 	margin: 20px;
@@ -43,9 +44,20 @@ footer {
 
 a {
 	text-decoration: none;
+	color: var(--link-colour);
 }
+
 a:hover {
 	text-decoration: underline;
+}
+
+a img {
+	opacity: .90;
+	/*transition: opacity .3s ease-in-out;*/
+}
+
+a img:hover {
+	opacity: 1;
 }
 
 
@@ -73,9 +85,6 @@ a:hover {
 
 
 /* SUB CONTAINERS */
-
-.title-logo {
-}
 
 .main-title {
 	font-family: var(--title-font);
@@ -159,6 +168,22 @@ a:hover {
 
 .list-inline li {  /* For use in the ul element */
 	display: inline-block;
+}
+
+
+/* DARK MODE COMPATIBILITY */
+
+@media screen and (prefers-color-scheme: dark) {
+	body {
+		background-color: var(--bg-dark-mode);
+		color: var(--text-dark-mode);
+	}
+	.stealth-link {
+		color: var(--text-dark-mode);
+	}
+	.stealth-link:hover {
+		color: var(--stealth-hover-dark);
+	}
 }
 
 
