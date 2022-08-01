@@ -2,6 +2,13 @@
 @import "settings.css";
 
 
+/*
+	myF is a simple framework inspired on Bootstrap and developed by Marcelo Freri.
+
+	Contact info:  mfreri@proton.me
+*/
+
+
 /* PRIMITIVES */
 * {
 	box-sizing: border-box;
@@ -11,17 +18,17 @@ body {
 	background-color: var(--bg-colour);
 	color: var(--text-colour);
 	font-family: var(--text-font);
-	margin: 20px;
-	padding: 0;
-}
-
-h1 {
-	font-family: var(--title-font);
-	font-size: 42px;
+	/* margin: var(--small-gap); */
+	padding: var(--small-gap);
 }
 
 h1, h2, h3 {
-	margin: 20px 0 5px 0;
+	font-family: var(--title-font);
+}
+
+h1 {
+	font-size: 48px;
+	margin: 0;
 }
 
 hr {
@@ -29,11 +36,11 @@ hr {
 	background-color: var(--text-colour);
 	border: none;
 	height: 1px;
-	margin: 10px;
+	margin: var(--small-gap);
 }
 
 p {
-	margin-top: 5px;
+	/* margin-top: 0; */
 	text-align: justify;
 }
 
@@ -61,25 +68,25 @@ a img:hover {
 }
 
 
+
 /* MAIN CONTAINERS */
 
 .header-container {
 	/*background-color: pink;*/
-	padding: 10px;
+	padding: var(--small-gap);
 	clear: both;
 }
 
 .body-container {
 	/*background-color: palegoldenrod;*/
-	margin-top: 20px;
-	padding: 30px 0 10px 0;
+	padding: var(--medium-gap);
 	clear: both;
 	display: inline-block;
 }
 
 .footer-container {
 	/*background-color: lightgreen;*/
-	padding: 50px 10px 10px 10px;
+	padding: var(--small-gap);
 	clear: both;
 }
 
@@ -88,12 +95,19 @@ a img:hover {
 
 .main-title {
 	font-family: var(--title-font);
-	font-size: 42px;
-	margin-bottom: 20px;
+	font-size: 48px;
+	/* margin-bottom: 20px; */
 }
 
-.navbar {
-	margin: 5px 0;
+.sub-title {
+	margin: 0;
+	margin-bottom: var(--small-gap);
+}
+
+.navbar nav ul li{
+	/* margin: 5px 0; */
+	padding-left: var(--small-gap);
+	padding-right: var(--small-gap);
 }
 
 .navbar-single {
@@ -109,11 +123,34 @@ a img:hover {
 }
 
 .navbar-left nav ul li {
-	padding-right: 10px;
+	padding-right: var(--small-gap);
+	padding-left: 0;
 }
 
 .navbar-right nav ul li {
-	padding-left: 10px;
+	padding-left: var(--small-gap);
+	padding-right: 0;
+}
+
+.card {
+	border: 1px solid;
+	/* border-radius: 16px; */
+	padding: 0.01em 16px;
+	background-color: whitesmoke;
+	display: flex;
+	justify-content: space-between;
+	margin: var(--small-gap) auto;
+}
+
+.card-text {
+	/* width: 70%; */
+	margin: var(--small-gap);
+	overflow-y: auto;
+}
+
+.card-img {
+	/* width: 30%; */
+	margin: var(--small-gap);
 }
 
 
@@ -127,11 +164,46 @@ a img:hover {
 	float: right;
 }
 
+.float-center {
+	/* Must set width in HTML file */
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .fixed-top {
 	position: fixed;
 	top: 0;
-	left: 10px;
-	right: 10px;
+	left: var(--small-gap);
+	right: var(--small-gap);
+	background-color: var(--bg-colour);
+}
+
+
+/* SIZES */
+
+.size-wide {
+	width: 100%;
+}
+
+.size-normal {
+	width: 90%;
+}
+
+.size-narrow {
+	width: 60%;
+}
+
+.size-tight {
+	width: 30%;
+}
+
+
+/* ATTRIBUTES */
+
+.rounded {
+	border-radius: 16px;
+	border: 1px solid;
+	margin-bottom: var(--small-gap);
 }
 
 
@@ -151,6 +223,19 @@ a img:hover {
 	color: var(--link-colour);
 }
 
+.back-button {
+	margin: var(--small-gap) 0;
+}
+
+.hint div {
+	display: none;
+	background-color: yellow;
+}
+
+.hint:hover div {
+	display: inline-block;
+}
+
 
 /* TEXT */
 
@@ -164,52 +249,52 @@ a img:hover {
 
 .list-unstyled {
 	list-style-type: none;
+	padding-left: 0px;
 }
 
-.list-inline li {  /* For use in the ul element */
+.list-inline li {
+	/* For use in the ul element */
 	display: inline-block;
+	/*
+	margin-left: var(--small-gap);
+	margin-right: var(--small-gap);
+	*/
 }
 
 
-/* DARK MODE COMPATIBILITY */
-
-@media screen and (prefers-color-scheme: dark) {
-	body {
-		background-color: var(--bg-dark-mode);
-		color: var(--text-dark-mode);
-	}
-	.stealth-link {
-		color: var(--text-dark-mode);
-	}
-	.stealth-link:hover {
-		color: var(--stealth-hover-dark);
-	}
+/* IMAGES */
+.img-portrait {
+	padding: var(--small-gap);
 }
 
 
 /* GRID */
 
+.one-column, .two-columns, .three-columns, .four-columns {
+	padding: var(--small-gap);
+}
+
 .one-column {
 	clear: both;
-	padding: 10px;
 }
 
 .two-columns {
 	width: 50%;
 	float: left;
-	padding: 10px;
 }
 
 .three-columns {
 	width: 33.33%;
 	float: left;
-	padding: 10px;
 }
 
 .four-columns {
 	width: 25%;
 	float: left;
-	padding: 10px;
+}
+
+.left-column {
+	padding-right: var(--large-gap);
 }
 
 
@@ -263,3 +348,22 @@ a img:hover {
 	}
 }
 
+
+/* DARK MODE COMPATIBILITY */
+/*
+@media screen and (prefers-color-scheme: dark) {
+	body {
+		background-color: var(--bg-dark-mode);
+		color: var(--text-dark-mode);
+	}
+	.stealth-link {
+		color: var(--text-dark-mode);
+	}
+	.stealth-link:hover {
+		color: var(--stealth-hover-dark);
+	}
+	.fixed-top {
+		background-color: var(--bg-dark-mode);
+	}
+}
+*/

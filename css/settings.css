@@ -1,3 +1,8 @@
+/*
+	This is part of myF, a CSS framework developed by Marcelo Freri.
+*/
+
+
 /* Variables */
 
 :root {
@@ -18,11 +23,9 @@
 	--text-font: 'BellGothic';
 
 	/* Margins */
-	/*
-		minimal: 10px;
-		medium: 30px;
-		large: 50px;
-	*/
+	--small-gap: 16px;
+	--medium-gap: 32px;
+	--large-gap: 64px;
 
 	/* US complaint */
 	--text-color: var(--text-colour);
