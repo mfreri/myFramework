@@ -104,6 +104,10 @@ a img:hover {
 	margin-bottom: var(--small-gap);
 }
 
+.navbar {
+
+}
+
 .navbar nav ul li{
 	/* margin: 5px 0; */
 	padding-left: var(--small-gap);
@@ -311,6 +315,12 @@ a img:hover {
 /* Extra-small */
 
 @media (max-width: 575px) {
+	:root {
+		--small-gap: var(--small-gap-xs);
+		--normal-gap: var(--normal-gap-xs);
+		--large-gap: var(--large-gap-xs);
+	}
+
 	.xs-hide {
 		display: none;
 	}
@@ -343,6 +353,12 @@ a img:hover {
 /* Extra-large */
 
 @media (min-width: 1200px) {
+	:root {
+		--small-gap: var(--small-gap-xl);
+		--normal-gap: var(--normal-gap-xl);
+		--large-gap: var(--large-gap-xl);
+	}
+
 	.xl-hide {
 		display: none;
 	}

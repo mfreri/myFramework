@@ -23,9 +23,18 @@
 	--text-font: 'BellGothic';
 
 	/* Margins */
+	/* Extra Small */
+	--small-gap-xs: 8px;
+	--medium-gap-xs: 16px;
+	--large-gap-xs: 32px;
+	/* Normal */
 	--small-gap: 16px;
 	--medium-gap: 32px;
 	--large-gap: 64px;
+	/* Extra Large */
+	--small-gap-xl: 32px;
+	--medium-gap-xl: 64px;
+	--large-gap-xl: 128px;
 
 	/* US complaint */
 	--text-color: var(--text-colour);
