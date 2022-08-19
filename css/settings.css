@@ -6,13 +6,35 @@
 /* Variables */
 
 :root {
-	/* Colours */
-	--text-colour:  #4a4a4a;
-	--bg-colour: white;
-	--stealth-hover: gray;
-	--link-colour: #729FCF;
+	/* Basic Colors */
+	--black: black;
+	--white: #F5F5F5;
+	--red: #DA032F;
+	--green: #7FBC00;
+	--blue:  #0054B8;
+	--gray: #303841;
+	--yellow: #FCC541;
+	--dark-blue: #333652;
+	/* San Francisco Clouded */
+	--teal-green: #4297a0;
+	--ivory: #f4eae6;
+	--coral: #e57f84;
+	--misty-blue: #2f5061;
+	/* Facing Forward */
+	--sand-dollar: #e5ddc8;
+	--teal: #01949a;
+	--navy-blue: #004369;
+	--red: #db1f48;
 
-	/* Colours in dark mode */
+	/* Interface Colors */
+	--text-color:  #4a4a4a;
+	--bg-color: var(--white);
+	--link-color: #729FCF;
+	--hint-color: #fff4bd;
+	--color-motive: steelblue;
+	--text-color-motive: var(--white);
+
+	/* Colors in dark mode */
 	--text-dark-mode: lightgray;
 	--bg-dark-mode: #303841;
 	--stealth-hover-dark: white;
@@ -21,23 +43,27 @@
 	/* The font files are setup in fonts.css */
 	--title-font: 'AvantGarde';
 	--text-font: 'BellGothic';
+	--maintenance-font: 'Andale';
+	/* Sizes */
+	--small-font: 12px;
+	--medium-font: 16px;
+	--large-font: 34px;
 
 	/* Margins */
 	/* Extra Small */
-	--small-gap-xs: 8px;
-	--medium-gap-xs: 16px;
-	--large-gap-xs: 32px;
-	/* Normal */
-	--small-gap: 16px;
-	--medium-gap: 32px;
-	--large-gap: 64px;
+	--small-gap-xs: 0.5em;
+	--medium-gap-xs: 1em;
+	--large-gap-xs: 2em;
+	/* Medium */
+	--small-gap: 1em;
+	--medium-gap: 1.5em;
+	--large-gap: 4em;
 	/* Extra Large */
-	--small-gap-xl: 32px;
-	--medium-gap-xl: 64px;
-	--large-gap-xl: 128px;
+	--small-gap-xl: 2em;
+	--medium-gap-xl: 4em;
+	--large-gap-xl: 8em;
 
-	/* US complaint */
-	--text-color: var(--text-colour);
-	--bg-color: var(--bg-colour);
-	--link-color: var(--link-colour);
+	/* Animation */
+	--transition: .1s;
+	--transparency: .85;
 }

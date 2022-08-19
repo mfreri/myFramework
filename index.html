@@ -3,67 +3,252 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>myF - A Basic CSS Framework</title>
+	<title>MyF Documentation</title>
 	<link rel="stylesheet" type="text/css" href="css/myfrmwrk.css">
-	<link rel="stylesheet" type="text/css" href="css/mystyle.css">
 </head>
 <body>
 
 
-	<div class="header-container" id="top">
-		<div class="float-left xs-hide">
-			<a href="#"><img src="img/myf-logo.png" style="width: 100px;" alt="Provisional logo"></a>
+	<div class="header-container sticky-top colored bordered">
+		<h1 id="main-title" class="text-center"><a href="#" class="stealth-link">myF 0.5a</a></h1>
+		<h6 class="sub-title text-center">- a simple css framework -</h6>
+		<div class="social-bar float-right">
+			<a href="#"><img src="img/facebook-logo.png" alt="Facebook logo"></a>
+			<a href="#"><img src="img/github-logo.png" alt="Github logo"></a>
+			<a href="#"><img src="img/twitter-logo.png" alt="Twitter logo"></a>
+			<a href="#"><img src="img/youtube-logo.png" alt="Youtube logo"></a>
 		</div>
-		<div class="float-right text-center">
-			<a href="#" class="stealth-link main-title"><h1>myF 0.4a</h1></a>
-			<h6 class="sub-title">A SIMPLE CSS FRAMEWORK</h6>
-		</div>
-		<div class="navbar navbar-right">
-			<nav>
-				<ul class="text-right list-unstyled list-inline">
-					<li><a href="#" class="stealth-link">HOME</a></li>
-					<li><a href="#" class="stealth-link">ABOUT</a></li>
-					<li><a href="#" class="stealth-link">CONTACT</a></li>
+		<nav class="navbar navbar-left">
+			<ul class="inline">
+				<li><a href="#" class="colored">home</a></li>
+				<li><a href="#" class="colored">download</a></li>
+				<li><a href="#" class="colored">contribute</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="body-container">
+		<p class="text-center">
+			<img src="img/myf-logo.png" alt="My framework logo" style="height: 6em;">
+		</p>
+		<br>
+		<article>
+			<h3 class="title">This Is The First Article</h3>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit facere laboriosam, delectus aliquid qui temporibus assumenda esse quisquam corrupti tenetur natus unde numquam atque quis est eum magnam laborum quasi id voluptatibus corporis libero dolor? Quos labore a facilis, reprehenderit temporibus quibusdam laudantium amet. Autem necessitatibus rem, aut modi excepturi quidem similique molestias, fugit? Laudantium, minima, reprehenderit. Nesciunt dolores, in eaque, voluptates veniam repellendus itaque commodi ratione cum, explicabo doloribus.
+			</p>
+		</article>
+		<article>
+			<h3 class="title">This Is The Second Article</h3>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit facere laboriosam, delectus aliquid qui temporibus assumenda esse quisquam corrupti tenetur natus unde numquam atque quis est eum magnam laborum quasi id voluptatibus corporis libero dolor? Quos labore a facilis, reprehenderit temporibus quibusdam laudantium amet. Autem necessitatibus rem, aut modi excepturi quidem similique molestias, fugit? Laudantium, minima, reprehenderit. Nesciunt dolores, in eaque, voluptates veniam repellendus itaque commodi ratione cum, explicabo doloribus.
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit facere laboriosam, delectus aliquid qui temporibus assumenda esse quisquam corrupti tenetur natus unde numquam atque quis est eum magnam laborum quasi id voluptatibus corporis libero dolor? Quos labore a facilis, reprehenderit temporibus quibusdam laudantium amet. Autem necessitatibus rem, aut modi excepturi quidem similique molestias, fugit? Laudantium, minima, reprehenderit. Nesciunt dolores, in eaque, voluptates veniam repellendus itaque commodi ratione cum, explicabo doloribus.
+			</p>
+		</article>
+		<article>
+			<h3 class="title">This Is A Flexbox Example</h3>
+			<div class="flex-container">
+				<div style="background-color: var(--color-motive); padding: 0 1em;">A</div>
+				<div style="background-color: var(--color-motive); padding: 0 1em;">B</div>
+				<div style="background-color: var(--color-motive); padding: 0 1em;">C</div>
+				<div style="background-color: var(--color-motive); padding: 0 1em;">D</div>
+				<div style="background-color: var(--color-motive); padding: 0 1em;">E</div>
+				<div style="background-color: var(--color-motive); padding: 0 1em;">F</div>
+			</div>
+		</article>
+		<article>
+			<h3 class="title">This Is A Grid Example</h3>
+			<div class="grid-container">
+				<div class="grid-item text-center" style="background-color: lightpink; width: 2em;">1</div>
+				<div class="grid-item text-center" style="background-color: lightgreen; width: 2em;">2</div>
+				<div class="grid-item text-center" style="background-color: mediumpurple; width: 2em;">3</div>
+				<div class="grid-item text-center" style="background-color: orange; width: 2em;">4</div>
+				<div class="grid-item text-center" style="background-color: lightblue; width: 2em;">5</div>
+			</div>
+		</article>
+
+		<article>
+			<h3 class="title">This Are Headlines Examples</h3>
+			<h1>h1</h1>
+			<h2>h2</h2>
+			<h3>h3</h3>
+			<h4>h4</h4>
+			<h5>h5</h5>
+			<h6>h6</h6>
+		</article>
+
+		<article>
+			<h3 class="title">This is a Table Example</h3>
+			<table>
+				<thead>
+					<tr>
+						<th>Nombre</th>
+						<th>Apellido</th>
+						<th>e-mail</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Marcelo</td>
+						<td>Freri</td>
+						<td>mfreri@proton.me</td>
+					</tr>
+					<tr>
+						<td>Valentino</td>
+						<td>Freri</td>
+						<td>valenfreri@proton.me</td>
+					</tr>
+					<tr>
+						<td>Bianca</td>
+						<td>Freri</td>
+						<td>biancafreri@proton.me</td>
+					</tr>
+				</tbody>
+			</table>
+			<br>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+		</article>
+
+		<article>
+			<h3 class="title">Images Examples</h3>
+			<h4 class="title">This is a Rounded Image (with border)</h4>
+			<p class="text-center">
+				<img src="img/batovi.jpg" alt="Cerro Batoví in Tacuarembó, Uruguay" class="bordered rounded">
+			</p>
+			<h4 class="title">This is a Circular Image (with border)</h4>
+			<p class="text-center">
+				<img src="img/batovi.jpg" alt="Cerro Batoví in Tacuarembó, Uruguay" class="rounded-circle bordered">
+			</p>
+			<h4 class="title">This is a Tag Image (with border)</h4>
+			<p class="text-center">
+				<img src="img/batovi.jpg" alt="Cerro Batoví in Tacuarembó, Uruguay" class="rounded-tag bordered">
+			</p>
+		</article>
+
+		<article>
+			<h3 class="title">This are Buttons Examples</h3>
+			<button type="button">Classic button</button>
+			<br>
+			<button type="button" class="flat-button">Flat button</button>
+			<br>
+		</article>
+
+		<article>
+			<h3 class="title">Highlight example</h3>
+			<p>
+				This is a <mark>highlighted</mark> text.
+			</p>
+		</article>
+
+		<article>
+			<h3 class="title">Spinner wheel example</h3>
+			<div class="spinner"></div>
+		</article>
+
+		<article>
+			<h3 class="title">Lists examples</h3>
+			<p>
+				<h4>Unordered List</h4>
+				<ul>
+					<li>First item</li>
+					<li>Second item</li>
+					<li>Third item</li>
+				</ul>
+			</p>
+			<p>
+				<h4>Ordered List</h4>
+				<ol>
+					<li>First item</li>
+					<li>Second item</li>
+					<li>Third item</li>
+				</ol>
+			</p>
+		</article>
+
+		<article>
+			<h3 class="title">Card example</h3>
+			<div class="card rounded bordered">
+				<div class="card-body">
+					<img src="img/familyguyhead.jpg" alt="Profile picture" class="card-img rounded">
+					<div class="card-text">
+						<h4 class="card-title text-center">Marcelo Freri</h4>
+						<p>
+							This is the content of the card. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						</p>
+					</div>
+				</div>
+				<div class="card-footer">
+					<hr>
+					This is the footer. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+				</div>
+			</div>
+		</article>
+
+		<article>
+			<h3 class="title">Navigation Bar example</h3>
+			<h4>Horizontal Left</h4>
+			<p>
+				This is the default alignment of the <b>nav</b> element.
+			</p>
+			<nav class="navbar navbar-left">
+				<ul class="inline">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Products</a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Contact</a></li>
 				</ul>
 			</nav>
-		</div>
+			<p>
+				<h4 class="text-right">Horizontal Right</h4>
+				<nav class="navbar navbar-right">
+					<ul class="inline">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Products</a></li>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</nav>
+			</p>
+			<p>
+				<h4 class="text-center">Horizontal Center</h4>
+				<nav class="navbar navbar-center">
+					<ul class="inline">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Products</a></li>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</nav>
+			</p>
+		</article>
+
 	</div>
-	
-	
-	<div class="body-container">
-		<div class="two-columns">
-			<section><h3><a href="#" class="stealth-link">Tile 1</a></h3></section>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea modo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non	proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea modo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non	proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea modo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
-			<div class="back-button text-right">
-				<a href="#top" class="permanent-link"><i>Back to top</i></a>
-			</div>
-		</div>
-		<div class="two-columns">
-			<section><h3><a href="#" class="stealth-link">Tile 2</a></h3></section>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea modo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non	proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea modo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non	proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea modo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
-			<div class="back-button text-right">
-				<a href="#top" class="permanent-link"><i>Back to top</i></a>
-			</div>
-		</div>
-		<div class="one-column">
-			<section><h3><a href="#" class="stealth-link">Tile 3</a></h3></section>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea modo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non	proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea modo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non	proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea modo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
-			<div class="back-button text-right">
-				<a href="#top" class="permanent-link"><i>Back to top</i></a>
-			</div>
-		</div>
-	</div>
-	
-	<div class="footer-container">
+
+
+	<footer class="footer-container colored">
+		<h3 class="title">This is the footer section</h3>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
 		<hr>
-		<footer class="text-center">Designed with <a href="#">myF</a> - &copy 2022</footer>
-	</div>
+		<p class="text-center">
+			Designed with <a href="#" class="colored">myF</a> - &copy 2022
+		</p>
+	</footer>
 
 
 </body>
