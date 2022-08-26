@@ -177,6 +177,11 @@ mark {
 	padding: .5em var(--medium-gap) .5em 0;
 }
 
+.navbar a:hover {
+	opacity: 1;
+	transition: var(--transition);
+}
+
 .navbar-single {
 	clear: both;
 }
@@ -249,7 +254,7 @@ mark {
 }
 
 .card-text {
-	margin: 0 var(--small-gap);
+	margin: auto var(--small-gap);
 }
 
 .card-footer {
@@ -265,6 +270,8 @@ mark {
 .container {
 	background-color: var(--bg-color);
 	padding: var(--small-gap);
+	margin-bottom: var(--medium-gap);
+	line-height: 1.5;
 	/*
 	margin: var(--small-gap);
 	*/
@@ -278,12 +285,14 @@ mark {
 .social-bar img {
 	width: 1.5em;
 	height: 1.5em;
-	margin: 0 .25em;
+	margin: 0 .2em;
+	/* filter: grayscale(80%); */
 }
 
 .social-bar a:hover {
-	background-color: var(--text-color);
-	transition: var(--transition);
+	/* background-color: var(--text-color); */
+	opacity: 1;
+	filter: grayscale(100%);
 }
 
 /* I'm not sure about the purpose of this class */
@@ -294,6 +303,7 @@ mark {
 	font-size: var(--medium-font);
 	text-decoration: uppercase;
 }
+
 
 /* POSITION */
 
@@ -391,6 +401,12 @@ mark {
 	color: var(--text-color-motive);
 }
 
+.highlight-on-hover:hover {
+	background-color: var(--text-color);
+	color: var(--bg-color);
+	text-decoration: none;
+}
+
 
 /* TEXT */
 
@@ -440,6 +456,40 @@ mark {
 	word-break: break-word;
 }
 
+.text-nowrap {
+	white-space: nowrap;
+}
+
+.text-tag {
+	background-color: var(--color-motive);
+	color: var(--text-color-motive);
+	margin: .25em;
+	padding-left: .5em;
+	padding-right: .5em;
+	text-transform: uppercase;
+	font-size: .8em;
+}
+
+.tag-yellow {
+	background-color: var(--yellow);
+	color: var(--black);
+}
+
+.tag-red {
+	background-color: var(--red);
+	color: var(--white);
+}
+
+.tag-green {
+	background-color: var(--green);
+	color: var(--black);
+}
+
+.tag-blue {
+	background-color: var(--blue);
+	color: var(--white);
+}
+
 
 /* IMAGES */
 .img-portrait {
@@ -467,15 +517,6 @@ mark {
 
 .back-link {
 	margin: var(--small-gap) 0;
-}
-
-.hint div {
-	display: none;
-	background-color: var(--hint-color);
-}
-
-.hint:hover div {
-	display: inline-block;
 }
 
 .flat-button {

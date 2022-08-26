@@ -1,5 +1,4 @@
 # myFramework
-### Version 0.3a (alpha)
 ---
 
 ## Introduction

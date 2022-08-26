@@ -9,7 +9,8 @@
 	/* Basic Colors */
 	--black: black;
 	--white: #F5F5F5;
-	--red: #DA032F;
+	/* --red: #DA032F; */
+	--red: #ED4956;
 	--green: #7FBC00;
 	--blue:  #0054B8;
 	--gray: #303841;
@@ -24,7 +25,7 @@
 	--sand-dollar: #e5ddc8;
 	--teal: #01949a;
 	--navy-blue: #004369;
-	--red: #db1f48;
+	/* --red: #db1f48; */
 
 	/* Interface Colors */
 	--text-color:  #4a4a4a;
