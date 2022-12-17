@@ -152,6 +152,7 @@ mark {
 	padding: var(--large-gap);
 	clear: both;
 	display: inline-block;
+	/*max-width: 1024px;*/
 }
 
 .footer-container {
@@ -407,6 +408,16 @@ mark {
 	text-decoration: none;
 }
 
+.borderless {
+	border: none;
+}
+
+/*
+.background-blur {
+	backdrop-filter: blur(14px);
+	background-color: #000000CC;
+}
+*/
 
 /* TEXT */
 
@@ -496,6 +507,12 @@ mark {
 	padding: var(--small-gap);
 }
 
+.banner {
+	width: 100%;
+	height: 360px;
+	object-fit: cover;
+}
+
 
 /* LINKS */
 
@@ -524,7 +541,7 @@ mark {
 	color: var(--text-color);
 	border-color: var(--text-color);
 	font-weight: bold;
-	border-radius: 0;
+	/*border-radius: 0;*/
 	padding: .75em;
 	margin: .5em 0;
 }
@@ -532,6 +549,7 @@ mark {
 .flat-button:hover {
 	background-color: var(--color-motive);
 	color: var(--text-color-motive);
+	/* border: none; */
 	transition: var(--transition);
 }
 
